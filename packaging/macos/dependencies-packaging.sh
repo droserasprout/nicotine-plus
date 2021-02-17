@@ -21,13 +21,13 @@
 ### This script is used to install UI and packaging dependencies in Homebrew ###
 
 # Install dependencies from the main Homebrew repos
-brew install \
-  adwaita-icon-theme \
-  create-dmg \
-  gdk-pixbuf \
-  gtk+3 \
-  librsvg \
+port -vs install \
+  gspell \
+  gtk3 \
   upx
+
+brew install \
+  create-dmg
 
 # Install dependencies with pip
 pip3 install \

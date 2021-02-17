@@ -21,11 +21,11 @@
 ### This script is used to install core dependencies in Homebrew ###
 ### These are enough to run unit tests and use non-UI code ###
 
-# Install dependencies from the main Homebrew repos
-brew install \
-  flake8
+port -vs install \
+  python39
 
 # Install dependencies with pip
 pip3 install \
+  flake8 \
   pep8-naming \
   pytest

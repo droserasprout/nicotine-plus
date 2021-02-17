@@ -101,23 +101,13 @@ Unstable Windows packages are generated after every commit to the master branch,
 
 ## macOS
 
-### Stable (Catalina/10.15 and newer)
+### Stable
 
-A stable macOS installer for Nicotine+ is available on macOS version 10.15 (Catalina) and newer.
+A stable macOS installer for Nicotine+ is available.
 
 - [Download Installer](https://github.com/Nicotine-Plus/nicotine-plus/releases/download/3.0.0/macos-installer.zip)
 
-### Stable (Mojave/10.14)
-
-On macOS version 10.14 (Mojave), the recommended approach is to install Nicotine+ using [Homebrew](https://brew.sh).
-
-Once Homebrew is set up, run the following:
-
-```sh
-brew install nicotine-plus
-```
-
-### Unstable (Catalina/10.15 or newer)
+### Unstable
 
 Unstable macOS installers are generated after every commit to the master branch, and should only be used for testing. You need to be signed into a GitHub account to download the installers.
 
