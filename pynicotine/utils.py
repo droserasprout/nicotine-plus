@@ -512,6 +512,13 @@ def execute_command(command, replacement=None, background=True, returnoutput=Fal
 
 def _try_open_uri(uri):
 
+    if os.environ.get("GDK_BACKEND") == "broadway":
+        # No system URI handler in a headless Broadway/container session.
+        # Hand it to the browser to open in a new tab (requires patched GTK)
+        from gi.repository import Gtk  # pylint: disable=import-error
+        Gtk.show_uri(None, uri, 0)
+        return
+
     if sys.platform not in {"darwin", "win32"}:
         try:
             from gi.repository import Gio  # pylint: disable=import-error
