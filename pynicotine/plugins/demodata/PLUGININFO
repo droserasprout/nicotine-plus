@@ -1,0 +1,7 @@
+# SPDX-FileCopyrightText: 2026 Nicotine+ Contributors
+# SPDX-License-Identifier: GPL-3.0-or-later
+
+Name = "Demo Data"
+Description = "Fill every widget with synthetic data for offline UI testing (Broadway). Injects rooms, chat, DMs, users, buddies, search results, transfers, user info/browse and interests, then keeps chat ticking. Enable it and do NOT connect to the real server."
+Version = "0.1"
+Authors = ["nicotine-mono"]
