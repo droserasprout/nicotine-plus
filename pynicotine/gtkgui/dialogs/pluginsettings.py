@@ -146,7 +146,8 @@ class PluginSettings(Dialog):
 
     def _add_radio_option(self, option_name, option_value, description, group, items):
 
-        box = Gtk.Box(spacing=6, orientation=Gtk.Orientation.VERTICAL, visible=True)
+        box = Gtk.Box(spacing=6, orientation=Gtk.Orientation.HORIZONTAL,
+                      halign=Gtk.Align.START, visible=True)
         label = self._generate_widget_container(description, group, box)
 
         last_radio = None
