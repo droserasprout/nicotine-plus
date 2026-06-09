@@ -19,8 +19,3 @@ window.csd {
                 0 0 0 1px rgba(0, 0, 0, 0.12);
 }
 
-popover > contents {
-    /* Workaround for GTK bug where popovers are misaligned */
-    box-shadow: none;
-}
-
